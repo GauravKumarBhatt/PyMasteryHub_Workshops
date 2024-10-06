@@ -201,6 +201,18 @@
 #         count += 1
 
 
+# def fibonacci(n):
+#     if n <= 0:
+#         print("incorrect input")
+#     elif n==1:
+#         return 0
+#     elif n==2:
+#         return 1
+#     else:
+#         return fibonacci(n-1) + fibonacci(n-2)
+# print(fibonacci(10))
+
+
 ##---------------sum of natural number up to -----------------------
 # num = int(input('Enter the number: '))
 # sum = 0
@@ -208,4 +220,94 @@
 #     sum = sum + i
 # print('The sum is:',sum)
 
+##------------------powers of 2 using anonymous function-------------------------
+# power = lambda a : a**2
+# result = power(2)
+# print(result)
 
+# terms = int(input('Enter the terms: '))
+# result = list(map(lambda x: 2**x, range(terms)))
+# print("The total terms are:",terms)
+# for i in range(terms):
+#     print("2 raised to power", i, "is", result[i])
+
+
+##-------------------find numbers divisible by another numbers-------------------
+# num1 = list(map(int, input("Enter the first number (dividend): ").split()))
+# num2 = int(input("Enter the second number (divisor): "))
+
+# if num2 == 0:
+#     print("Division by zero is not allowed!")
+# elif num1 % num2 == 0:
+#     print(f"{num1} is divisible by {num2}.")
+# else:
+#     print(f"{num1} is not divisible by {num2}.")
+
+
+# # Take a list of numbers
+# my_list = [12, 65, 54, 39, 102, 339, 221,]
+
+# # use anonymous function to filter
+# result = list(filter(lambda x: (x % 13 == 0), my_list))
+
+# # display the result
+# print("Numbers divisible by 13 are",result)
+
+
+
+# numbers = list(map(int, input("Enter a list of numbers separated by spaces: ").split()))
+# divisor = int(input("Enter the divisor: "))
+
+# divisible_numbers = [num for num in numbers if num % divisor == 0]
+# if divisible_numbers:
+#     print(f"Numbers divisible by {divisor}: {divisible_numbers}")
+# else:
+#     print(f"No numbers are divisible by {divisor}")
+
+
+##---------------find simple interest---------------
+# P = int(input('enter P: '))
+# T = int(input('enter T: '))
+# R = int(input('enter R: '))
+# SI = (P*T*R)/100
+# print(f'Simple Interest is {SI}')
+
+##------------------finding compound interest-----------------
+# p = int(input('enter P: '))
+# t = int(input('enter T: '))
+# r = int(input('enter R: '))
+# amount = p*(1+r/100)**t
+
+# compound_Interest = amount - p
+# print(f'Compound Interest is {compound_Interest}')
+
+## ------------Python program to find H.C.F of two numbers--------------
+
+# def compute_hcf(x, y):
+#     if x > y:
+#         smaller = y
+#     else:
+#         smaller = x
+#     for i in range(1, smaller+1):
+#         if((x % i == 0) and (y % i == 0)):
+#             hcf = i 
+#     return hcf
+
+# num1 = 54 
+# num2 = 24
+
+# print("The H.C.F. is", compute_hcf(num1, num2))
+
+# Function to find HCF the Using Euclidian algorithm
+# def compute_hcf(x, y):
+#    while(y):
+#        x, y = y, x % y
+#    return x
+
+# hcf = compute_hcf(300, 400)
+# print("The HCF is", hcf)
+
+##-----------reverse a string------------
+string = 'a#b@c'
+result = string[ : :-2]
+print(result)  # Output: 'c@b#a'
