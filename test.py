@@ -308,6 +308,48 @@
 # print("The HCF is", hcf)
 
 ##-----------reverse a string------------
-string = 'a#b@c'
-result = string[ : :-2]
-print(result)  # Output: 'c@b#a'
+# string = 'a#b@c'
+# result = string[ : :-2]
+# print(result)  # Output: 'c@b#a'
+
+
+
+##------------------Python Program to find the L.C.M. of two input number---------------------
+# def compute_lcm(x,y):
+#     if x>y:
+#         greater = x
+#     else:
+#         grater = y
+#     while(True):
+#         if((greater % x == 0) and (greater % y == 0)):
+#             lcm = greater
+#             break
+#         greater += 1
+#     return lcm
+
+# num1 = 54
+# num2 = 24
+# print("the L.C.M is", compute_lcm(num1,num2))
+
+# def compute_gcd(x, y):
+#     while(y):
+#         x, y = y, x%y
+#     return x
+
+# def compute_lcm(x, y):
+#     lcm = (x*y)//compute_gcd(x, y)
+#     return lcm
+
+# num1 = 54
+# num2 = 24
+# print("The LCM is", compute_lcm(num1, num2))
+
+##--------------find factor of a number--------------------------
+# def print_factors(x):
+#     print("the factors of", x, "are")
+#     for i in range(1, x+1):
+#         if x % i == 0:
+#             print(i)
+# num = 320
+# print_factors(num)
+
