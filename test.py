@@ -353,3 +353,149 @@
 # num = 320
 # print_factors(num)
 
+##----------------display the calender----------------------
+# import calendar, datetime
+# def display_calendar():
+#     today = datetime.date.today()
+#     year = today.year
+#     month = today.month
+
+#     print(f"Here is the calendar for {calendar.month_name[month]} {year}:")
+#     print(calendar.month(year, month))
+
+# display_calendar()
+
+##------------python program suffle Deck of Cards----------------
+# import itertools, random
+# deck = list(itertools.product(range(1,14), ['spade', 'heart', 'diamond', 'club']))
+# random.shuffle(deck)
+
+# print("you got: ")
+# for i in range(5):
+#     print(deck[i][0], 'of', deck[i][1])
+
+
+##---------------add two Matrix---------------
+# X = [[12,7,3],
+#     [4 ,5,6],
+#     [7 ,8,9]]
+
+# Y = [[5,8,1],
+#     [6,7,3],
+#     [4,5,9]]
+
+# result = [[0,0,0],
+#          [0,0,0],
+#          [0,0,0]]
+
+# for i in range(len(X)):
+#     for j in range(len(X[0])):
+#         result[i][j] = X[i][j] + Y[i][j]
+
+# for r in result:
+#     print(r)
+
+##------------------Program to transpose a matrix using a nested loop--------------------------
+# X = [[12,7],
+#     [4 ,5],
+#     [3 ,8]]
+
+# result = [[0,0,0],
+#          [0,0,0]]
+
+# # iterate through rows
+# for i in range(len(X)):
+#    # iterate through columns
+#    for j in range(len(X[0])):
+#        result[j][i] = X[i][j]
+
+# for r in result:
+#    print(r)
+
+
+
+##-------------------Program to multiply two matrices using nested loops-----------------------
+
+# # 3x3 matrix
+# X = [[12,7,3],
+#     [4 ,5,6],
+#     [7 ,8,9]]
+# # 3x4 matrix
+# Y = [[5,8,1,2],
+#     [6,7,3,0],
+#     [4,5,9,1]]
+# # result is 3x4
+# result = [[0,0,0,0],
+#          [0,0,0,0],
+#          [0,0,0,0]]
+
+# # iterate through rows of X
+# for i in range(len(X)):
+#    # iterate through columns of Y
+#    for j in range(len(Y[0])):
+#        # iterate through rows of Y
+#        for k in range(len(Y)):
+#            result[i][j] += X[i][k] * Y[k][j]
+
+# for r in result:
+#    print(r)
+
+##-----------Palindrome or Not---------------
+# def palindrome(s):
+#     return s == s[::-1]
+# word = input("enter the string: ")
+# if palindrome(word):
+#     print(word,"is a palindrome")
+# else:
+#     print(word,"is not a palindrome")
+
+
+##-----------Remove Punctuations from a string------------------
+
+# punctuations = '''!()-[]{};"' \,<>./!@#$%^&*_~'''
+# my_str = "Hello!!! , he said --- and went."
+# no_punct = ""
+# for char in my_str:
+#     if char not in punctuations:
+#         no_punct = no_punct + char
+# print(no_punct)
+
+
+
+##-------------sort words in alphabet order---------------
+# def sort_word(sentence):
+#     words = sentence.split()
+#     words.sort()
+#     return ' ' .join(words)
+
+# # test the function
+# sentence = "hello Gaurav this is python programming"
+# print(sort_word(sentence))
+
+
+
+##---------------------count the number of each vowels---------------------------
+
+# def count_vowels(text):
+#     # Dictionary to store the count of each vowel
+#     vowels = {'a': 0, 'e': 0, 'i': 0, 'o': 0, 'u': 0}
+    
+#     # Convert the text to lowercase to handle both upper and lower case letters
+#     text = text.lower()
+    
+#     # Loop through the characters in the text
+#     for char in text:
+#         if char in vowels:
+#             vowels[char] += 1
+    
+#     return vowels
+
+
+# text = input("Enter a string: ")
+# vowel_count = count_vowels(text)
+
+# # Display the count of each vowel
+# print("Vowel count in the given text:")
+# for vowel, count in vowel_count.items():
+#     print(f"{vowel}: {count}")
+
